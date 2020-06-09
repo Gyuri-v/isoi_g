@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%; height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background: white;
+    box-shadow: rgba(242, 242, 242,0.5) 2px 3px 5px;
+}
+.header_box{
+    width: 1200px;
+    padding: 0px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 5%;
+    float: left;
+    padding-top: 25px;
+}
+.header_box ul.menu_box{
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.header_box ul.menu_box>li{
+    width: 180px; height: 80px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.header_box ul.menu_box>li:hover{
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+.header_box ul.menu_box li a {
+    font-size: 18px;
+}
+
+
+.menu2_box{
+    width: 100%; height: 0px;
+    position: absolute;
+    background-color: #fff;
+    top: 80px; left: 0;
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+    border-top: 1px solid #f2f2f2;
+    box-shadow: rgb(242, 242, 242,0.5) 2px 5px 15px;
+    overflow: hidden;
+}
+.menu2_box li{
+    float: left;
+    margin-right: 5%;
+}
+.menu2_box li a{
+    transition-duration: 0.5s;
+}
+.menu2_box li a:hover{
+    color: #ef5e5e;
+}
+.header_box ul.menu_box li.header_f:hover .menu2_box{
+    height: 100px;
+    transition-duration: 0.5s;
+}
+
+.menu3_box{
+    width: 100%; height: 0px;
+    position: absolute;
+    background-color: #fff;
+    top: 80px; left: 0;
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+    border-top: 1px solid #f2f2f2;
+    box-shadow: rgb(242, 242, 242,0.5) 2px 5px 15px;
+    overflow: hidden;
+}
+.menu3_box li{
+    float: left;
+    margin-left: 5%;
+}
+.menu3_box li:first-child{
+    margin-left: 15%;
+}
+.menu3_box li a{
+    transition-duration: 0.5s;
+}
+.menu3_box li a:hover{
+    color: #ef5e5e;
+}
+.header_box ul.menu_box li.header_f2:hover .menu3_box{
+    height: 100px;
+    transition-duration: 0.5s;
+}
+
+/* - m navigation - */
+
+#mnav{
+    width: 50px; height: 50px;
+    position: absolute;
+    right: 10px; top: 15px;
+    padding: 12px 13px;
+    display: none;
+}
+#mnav span{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #444;
+    margin: 5px 0;
+}
+#mmenu{
+    position: fixed;
+    top: 0; right:0;
+    width: 0%; height: 100vh;
+    background: rgba(255,255,255,1);
+    overflow: hidden;
+}
+#mmenu .mgnb>li{
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd; 
+}
+#mmenu .mgnb>li:first-child{
+    padding: 30px 40px;
+    margin-bottom: 10px;   
+}
+#mmenu .mgnb>li a{
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+}
+#mmenu .mgnb span{
+    color: #f82f58;
+}
+#mmenu .mlnb{
+    padding-top: 20px;
+}
+#mmenu .mgnb>li .mlnb li a{
+    padding: 15px 0;
+    font-size: 15px;
+    color: #666;
+}
+
+#mmenu .close{
+    width: 50px; height: 50px;
+    position: absolute;
+    right: 10px; top: 15px;
+}
+#mmenu .close span{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #444;
+    position: absolute;
+    top: 45%; left: 25%;
+    transform: translate(-45%,-25%);
+    -o-transform: translate(-45%,-25%);
+    -webkit-transform: translate(-45%,-25%);
+    -ms-transform: translate(-45%,-25%);
+    -moz-transform: translate(-45%,-25%);
+    transition: 0.5s;
+}
+#mmenu .close .x{
+    transform: rotate(45deg);
+}
+#mmenu .close .y{
+    transform: rotate(-45deg);
+}
+#mmenu .close:hover .x{
+    transform: rotate(135deg);
+}
+#mmenu .close:hover .y{
+    transform: rotate(-135deg);
+}
+
+
+/* ----------------------------------------- */
+
+
+
+.full1{
+    background: url(../img/about/section_01.png)no-repeat center right;
+    background-size: cover;
+}
+.full2{
+    background: url(../img/about/section_02.png)no-repeat center left;
+    background-size: cover;
+}
+.full3{
+    background: url(../img/about/section_03.png)no-repeat center left;
+    background-size: cover;
+}
+.full4{
+    background: url(../img/about/section_04.png)no-repeat center left;
+    background-size: cover;
+}
+
+
+h1{
+    font-size: 50px;
+}
+p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#section1, #section3{
+    padding-left: 20%;
+}
+#section1 span{
+    color: #f82f58;
+}
+
+
+#section2, #section4{
+    text-align: center;
+}
+#section2 span{
+    color: #647255;
+}
+
+#section3 span{
+    color: #6c92a7;
+}
+#section4 span{
+    color: white;
+}
+@media screen and (max-width:1200px){
+    .header_box{
+    width: 100%;
+    }
+    .logo{
+        margin: 0 50px;
+    }
+    .menu3_box li:first-child{
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width:1024px){
+    .full1{
+        background: url(../img/about/sectionm_01.png)no-repeat center bottom;
+        background-size: cover;
+    }
+    .full2{
+        background: url(../img/about/sectionm_02.png)no-repeat center top;
+        background-size: cover;
+    }
+    .full3{
+        background: url(../img/about/sectionm_03.png)no-repeat right bottom;
+        background-size: cover;
+    }
+    .full4{
+        background: url(../img/about/sectionm_04.png)no-repeat right bottom;
+        background-size: cover;
+    }
+    .full2 .fp-tableCell, .full4 .fp-tableCell{
+        vertical-align: middle;
+    }/* ??? */
+    #section1, #section3{
+        padding-left: 10%;
+    }
+    h1{
+        padding-top: 200px;
+    } 
+}
+@media screen and (max-width:767px){
+    .logo{
+        width: 15%;
+        margin: 2px 20px 0 20px;
+    }
+    .header_box ul.menu_box{
+        display: none;
+    }
+    #mnav{
+    display: block;
+    }
+    /* */
+    h1{
+        padding-top: 150px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    em{
+        display: block;
+        margin-top: 10px;
+    }
+    #section1, #section3{
+        padding-left: 10%;
+    }
+    #section1 h1, #section3 h1{
+        font-size: 35px;
+    }
+    #section2 h1, #section4 h1{
+        font-size: 30px;
+    }
+    
+    
+}
+
+

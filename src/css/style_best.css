@@ -1,0 +1,212 @@
+*{
+    word-break: keep-all;
+}
+main{
+    width: 1200px;
+    margin: 0px auto 0;
+    padding-top: 150px;
+}
+
+/* - title - */
+
+.best_title{
+    width: 100%; height: 58px;
+    margin-bottom: 50px;
+    font-size: 52px;
+    text-align: center;
+    line-height: 58px;
+    letter-spacing: 5px;
+}
+
+/* - location - */
+
+.best_location{
+    width: 100%; height: 16px;
+    margin-bottom: 80px;
+    color: #666666;
+    font-size: 13px;
+}
+.loc_icon{
+    line-height: 16px;
+    text-align: center;
+}
+.loc_arr{
+    text-align: center;
+    line-height: 16px;
+    margin: 0 20px;
+}
+.loc_icon span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+/* - sub title - */
+
+.best_list{
+    width: 100%; height: 36px;
+    text-align: center;
+    font-size: 24px;
+    color: #ef5e5e;
+}
+
+
+/* - product - */
+
+.best_product_box{
+    width: 100%; height: 100%;
+    padding-top: 250px;
+    box-sizing: border-box;
+}
+.best_product_mobile{
+    display: none;
+}
+.best_one_box{
+    width: 30%; height: 100%;
+    float: left;
+}
+.best_two_box{
+    width: 30%; height: 100%;
+    float: left;
+    margin-top: -205px;
+    margin-left: 5%;
+}
+.best_thrid_box{
+    width: 30%; height: 100%;
+    float: left;
+    margin-left: 5%;
+}
+
+/*class 묶이 best_Box로 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.pro_box{
+    width: 100%; height: 520px;
+    background-color: #fff;
+    box-shadow: 1px 3px 15px #f2f2f2;
+    margin-bottom: 100px;
+    padding: 35px 48px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.list_number{
+    width:100%; height: 70px;
+    position: absolute;
+    top: -35px; left: 0;
+}
+.number_box{
+    width: 70px; height: 70px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    color: #888888;
+}
+.number_box span{
+    color: #ef5e5e;
+    font-size: 22px;
+}
+.fadein{
+    margin-top: 100px;
+    opacity: 0;
+}
+.basic_box{
+    width: 100%; height: 435px;
+    transition-duration: 0.5s;
+}
+.basic_star{
+    width: 80px; height: 42px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 42px;
+    color: #ef5e5e;
+}
+.basic_txt{
+    text-align: center;
+    font-size: 24px;
+    line-height: 25px;
+}
+.basic_price{
+    width: 100%; height: 60px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+}
+.sale{
+    width: 20%; height: 30px;
+    background-color: #ef5e5e;
+    border-radius: 35%;
+    color: #fff;
+    text-align: ce  nter;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 14px 10px 0 0;
+}
+
+.pro_box:hover .basic_box{
+    transform: scale(1.05);
+}
+
+.clear{
+    clear: both;
+}
+
+
+/* - 반응형 - */
+
+/*1200*/
+@media screen and (max-width:1199px){
+    main{
+        width: 100%;
+    }
+    .basic_txt {
+        font-size: 18px;
+    }
+    .basic_price {
+        font-size: 18px;
+    }
+}
+
+
+/*768*/
+@media screen and (max-width:768px){
+    .best_product_box {
+        padding-top: 50px;
+    }
+    .best_title{
+        margin-bottom: 35px;
+        font-size: 34px;
+    }
+    .best_location{
+        display: none;
+    }
+    .best_product_web{
+        display: none;
+    }
+    .best_product_mobile{
+        display: block;
+    }
+    .best_one_box{
+        width: 100%;
+    }
+    .basic_box img{
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+    .sale {
+        width: 80px;
+    }
+}
+
+
+/*480*/
+@media screen and (max-width:480px){
+    .basic_box img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
